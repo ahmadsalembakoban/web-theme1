@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisma-ads: Jobs Vacancy</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- smoothscroll js -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        
+    <!--JQuery-->  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <!--Floating WhatsApp css-->
+    <link rel="stylesheet" href="/floating-whatsapp/floating-wpp.min.css">  
+    <!--Floating WhatsApp javascript-->  
+    <script type="text/javascript" src="/floating-whatsapp/floating-wpp.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo">
+            <div class="header-text">
+                <h1>The purpose is to <br> teach, bring learning to people</h1>
+                <span class="square"></span>
+                <p>PT. Prisma Harapan is one of leading Advertising Companies in Indonesia. Prisma is Premium Innovation & Solution Media which was established in 1992. We have been consistently working to build Our reputation in Outdoor Media & Indoor Advertising Industry. We commit to give the best service to Our Customer Needs, with Our highly outstanding creativity and also through great maintenance of Our outdoor structures. We are ready to provide you our best service at Jabodetabek, Bandung-West Java, Bali, Surabaya-East Java, Sumatera, Kalimantan, Sulawesi, etc.</p>
+                <button class="common-btn">Read more</button>
+
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- navigation bar -->
+    <nav id="sideNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="#index.html">Features</a></li>
+            <li><a href="index.html">Courses</a></li>
+            <li><a href="index.html">Offer</a></li>
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="JobsVacancy.html">Job Vacancy</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+
+    <!-- about -->
+    <section id="about">
+        <!-- <div class="about-row"> -->
+        <div class="about-left-col">
+            <img src="images/about.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has root in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cities of the world in classical literature, discovered the undoubtable source.</p><br><br>
+                    <div class="line">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                    <h2>"Learnings is not attained by chance, it must be sought for with ardor and attended to with dilligence"</h2>
+                    <h3>----Abigail Adams</h3>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
+
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="container footer-row">
+            <hr>
+            <div class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Product</h4>
+                        <small>Our Plan</small><br>
+                        <small>Free Trial</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>About Us</h4>
+                        <small>Request Demo</small><br>
+                        <small>FAQs</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Support</h4>
+                        <small>Features</small><br>
+                        <small>Contact Us</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Explore</h4>
+                        <small>Find a non-profit</small><br>
+                        <small>Coporate Solution</small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <!-- <div class="copyright-text">
+                        <small>support@xypo.com</small><br>
+                        <small>copyright 2020 xypo</small>
+                    </div> -->
+                    <div class="footer-logo">
+                        <img src="images/logo.png">
+                        <!-- <button class="common-btn">English</button> -->
+                        <small>support@xypo.com</small><br>
+                        <small>copyright 2020 xypo</small>
+                    </div>
+                </div>
+            </div>
+            <!--Div where the WhatsApp will be rendered-->  
+            <div id="WAButton"></div>
+        </div>
+    </section>
+    
+
+
+
+
+        <!-- social icons -->
+        <div class="social-icons">
+            <img src="images/facebook.png">
+            <img src="images/instagram.png">
+            <img src="images/twitter.png">
+            <img src="images/linkedin.png">
+        </div>    
+    
+    
+    
+        <!-- button click function -->
+        <script>
+            var menuBtn = document.getElementById("menuBtn");
+            var sideNav = document.getElementById("sideNav");
+            sideNav.style.right = "-250px";
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px") {
+                    sideNav.style.right = "0px";
+                } else {
+                    sideNav.style.right = "-250px";
+                }
+            }
+        </script>
+    
+        <!-- smoothscroll function -->
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 1000,
+                speedAsDuration: true
+            });
+        </script>
+    
+        <!-- whatsapp function -->
+        <script type="text/javascript">  
+            $(function () {
+                    $('#WAButton').floatingWhatsApp({
+                        phone: '+6281298110510', //WhatsApp Business phone number
+                        headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+                        popupMessage: 'Hello, how can we help you?', //Popup Message
+                        showPopup: true, //Enables popup display
+                        buttonImage: '<img src="/floating-whatsapp/whatsapp.svg" />', //Button Image
+                        //headerColor: 'crimson', //Custom header color
+                        //backgroundColor: 'crimson', //Custom background button color
+                        position: "right" //Position: left | right
+        
+                    });
+                });
+        </script>  
+</body>
+</html>
